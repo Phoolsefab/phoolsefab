@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phool Se Fab</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .type {
+  display:inline-flex;
+}
+
+.type span {
+  word-break: break-all;
+  height: 1.2em;
+  width:0%;
+  overflow: hidden;
+  animation:t 2s linear infinite alternate;
+}
+.type span:before {
+  content:" ";
+  display:inline-block;
+}
+
+@keyframes t{
+  90%,100% {width:100%}
+}
+
+
+.scroll {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+}
+
+.scroll div {
+    white-space: nowrap;
+    animation: scroll var(--time) linear infinite;
+    animation-delay: calc(var(--time)*-1);
+
+}
+
+.scroll div:nth-child(2) {
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(var(--time)/-2);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.imgBox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox img {
+    max-width: 100px;
+    scale: 0.8;
+}
+
+
+    @media screen and (max-width: 775px) {
+  .col-2 {
+    width: 100%;
+  
+  }
+  #photo1{
+   display: none;
+  }
+  #hello1{
+    width: 100%;
+  }
+  #hello2{
+    width: 100%;
+    text-align: center;
+  }
+  #photo2{
+    display: none;
+  }
+  #butoooon{
+    width: 100%;
+    margin-top: 10px;
+  }
+  #card1{
+    width: 50%;
+
+  }
+ .card{
+  width: 100%;
+ }
+  
+  #name-succ{
+   display: inline-block;   
+  }
+ #arrow{
+  display:block;
+  
+ }
+
+}
+ 
+ @media screen and (max-width: 1000px) {
+  
+  #phot4{
+     max-height:300px ;
+  }
+ }
+
+ @media screen and (max-width: 450px) {
+  
+  #card1{
+       width: 100%;
+  }
+  #arrow{
+    display: inline;
+  }
+ }
+ 
+ 
+ ::selection {
+  color: #f14408;
+  background: #c5d8d5;
+}
+
+  </style>
+  <body>
+   
+   <!------------------------------ Header  --------------------- -->
+    
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 mb-5 bg-white m-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-weight: 900;">PhoolSeFab</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <!-- <a class="nav-link " aria-current="page" href="#"> <sup style="background-color: #ef6311; color: aliceblue; padding: 3px ; border-radius: 2px;"></sup></a> -->
+            </li>
+           
+            <li class="nav-item dropdown">
+              <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                
+              </a>
+              <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-disabled="true"></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search"  placeholder="🔎 SEARCH HERE" aria-label="Search">
+            <button class="btn btn-outline-success " type="submit">Search</button>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------------ FIRST BANNER  --------------------- -->
+    
+    <div class="container ">
+      <div class="row">
+        <!-- left -->
+        <div id="hello1"  class="col-6 p-4 ">
+          <div>
+            <h2 style="font-weight: 900">We Dream of a future where no one throws way 
+               <span style="color: #f57008 " class="type"><span class="mr-5">Flowers </span> <h2 id="nono" style="margin-left: 10px; font-weight: 900; color: black;">leftover</h2></h2>
+                
+               <p style="margin-top: 50px;">Instead, we see them as valuable stuff we can turn up again and again. We plan to team up with folks who run temples and big parties, and also teach neighborhoods how to use blooms in a green way. Our goal? To touch the environment in a good way and nudge everyone to go green every day. </p>
+                <div>
+                    <button id="butoooon "  style=" background-color: #f57008 ; padding: 8px 39px;" class="btn btn-primary ">Exploure Us More</button>
+                </div>
+           
+          </div>
+        </div>
+
+        <!-- right -->
+        <div id="photo1"  style="text-align: justify" class="col-6 ">
+          <div>
+            <div
+              class=" text-white "
+              style="width: 100%; height: 400px"
+            >
+              <img id="phot4"  style="width: 100%; height: 300px" src="phool.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------- 3rd SEction  --------------------->
+
+    <div class="container">
+        <div class=" row justify-content-center p-2 ">
+         <div style=" font-weight: 900;" class="col-2   p-3 shadow-lg p-3 mb-2 bg-white rounded card45">
+           10 Cities
+             <p style="font-weight: 500;">Spreading nationally</p>
+         </div>
+         <div style=" font-weight: 900;" class="col-2  p-3 shadow-lg p-3 mb-2 bg-white rounded card45">
+             Eco friendly
+             <p style="font-weight: 500;">Uses Craft papers</p>
+         </div>
+         <div style=" font-weight: 900;" class="col-2  p-3 shadow-lg p-3 mb-2 bg-white rounded card45">
+              less trash
+             <p style="font-weight: 500;">Recyling</p>
+         </div>
+         <div style=" font-weight: 900;" class="col-2  p-3 shadow-lg p-3 mb-2 bg-white rounded card45">
+              50+ Temples
+             <p style="font-weight: 500;">Collect leftovers</p>
+         </div>
+         
+        </div>
+     </div>
+
+      <!------------------------------ second banner  --------------------- -->
+      <!-- <div class="container-fluid " style="background-color: #f9f6f6 ;padding: 10px 0; ;">
+      <div class="container  mb-2">
+        <div class="row">
+         
+          <div id="hello1" style="  height: auto ; "  class="col-4 col-md-12 p-4 container">
+            <div>
+                <h4>ORGANIZATIONAL OBJECTIVES AND GOALS
+                </h4>
+              <h2 style="font-weight: 900">Objectives  <span style="color:#2eee51  ;">(Short-Term):</span></h2>
+                  
+                 <p style="margin-top: 10px;">⦁	Team up with no at least 50 temples, event organizing firms, and event managers to collect flower leftovers </p>
+                 <p style="margin-top: 10px;">⦁	Kick off our very first product series crafted from these flower leftovers—think scented sticks, eco-friendly colors, craft paper, and plant food. </p>
+                 <p style="margin-top: 10px;">⦁	Throw a bunch of workshop like at least 10 for the people around town to clue them in on why it's smart to recycle flower bits and go for earth-friendly habits. </p>
+
+                 <h2 style="font-weight: 900">Goals  <span style="color:#2eee51  ;"> (Long-Term):</span></h2>
+                  
+                 <p style="margin-top: 10px;">⦁	Spreading Out Nationally: Take our business to 10 different Indian cities and put better systems in place to gather more flowers. </p>
+                 <p style="margin-top: 10px;">⦁	Less Flower Trash in the Dump: Shoot to keep 80% of our flower leftovers out of the garbage dumps by recycling and making new stuff. </p>
+                 <p style="margin-top: 10px;">⦁	Make Stuff Without Hurting the Air: By the year 2030, we wanna switch all of our making-things processes to ones that won't let out yucky stuff into the air. </p>
+                
+             
+            </div>
+          </div>
+  
+         
+        </div>
+      </div>
+    </div> -->
+
+    <!------------------------------------- cards first ------------------------>
+<hr>
+    <div class="container mt-2">
+        <h2 style="font-weight: 800;">PROGRAMS AND SERVICES</h2>
+        <p>We take flowers that people throw away and turn them into nature-friendly options for stuff you use all the time. It's all about creating less trash and being all about the green life.</p>
+          <div class="row">
+             
+             <div  id="card1"  class="col-4 mb-2">
+                <div class="card" style="background-color: #f9f6f6 ;">
+                    
+                    <div id="gap"  class="card-body"> <span style="font-weight: 800;">⦁	Organic Incense Sticks </span> <br> Our team turns flowers from weddings and temples into organic incense sticks. Made without artificial chemicals, these natural incense sticks offer a calming, eco-smart choice over classic incense.</div>
+                    
+                    <div class="card-footer" style="background-color: white;">KNOW MORE ➤</div>
+                  </div>
+                  
+             </div>
+             <div  id="card1"  class="col-4 mb-2">
+              <div class="card" style="background-color: #f9f6f6 ;">
+                  
+                  <div id="gap"  class="card-body"> <span style="font-weight: 800;">⦁	Natural Dyes </span> <br> We turn bright-colored flower petals into natural dyes. These eco-friendly dyes work great on clothes, textiles, and paper, they're a green swap for chemical dyes that mess up our water.</div>
+                  
+                  <div class="card-footer" style="background-color: white;">KNOW MORE ➤</div>
+                </div>
+                
+           </div>
+           <div  id="card1"  class="col-4 mb-2">
+            <div class="card" style="background-color: #f9f6f6 ;">
+                
+                <div id="gap"  class="card-body"> <span style="font-weight: 800;">⦁	Handmade Paper & Packaging </span> <br> Artisans turn the fibrous stuff from tossed-out flowers into cool hand-crafted paper. People can use this stuff for making cards, boxing up products, or doing fun art projects. </div>
+                
+                <div class="card-footer" style="background-color: white;">KNOW MORE ➤</div>
+              </div>
+              
+         </div>
+         <div  id="card1"  class="col-4 mb-2">
+          <div class="card" style="background-color: #f9f6f6 ;">
+              
+              <div id="gap"  class="card-body"> <span style="font-weight: 800;">⦁	Natural Compost </span> <br>Got floral leftovers? They can become super-nourishing natural compost that’s just perfect for all types of growing things like garden plants, mega-farms, or just your regular ol' houseplant. We’re giving a boost to dirt by recycling blooms into this awesome compost.</div>
+              
+              <div class="card-footer" style="background-color: white;">KNOW MORE ➤</div>
+            </div>
+            
+       </div>
+       <div  id="card1"  class="col-4 mb-2">
+        <div class="card" style="background-color: #f9f6f6 ;">
+            
+            <div id="gap"  class="card-body"> <span style="font-weight: 800;">⦁	Biodegradable Gift Items & Packaging </span> <br>Check this out, we make biodegradable wrappers and boxes for presents out of old flower parts. Yup, we’re tackling the big problem of all that plastic and stuff you can’t recycle that wraps up gifts. Our way is way better for our planet.</div>
+            
+            <div class="card-footer" style="background-color: white;">KNOW MORE ➤</div>
+          </div>
+          
+     </div>
+     <div  id="card1"  class="col-4 mb-2">
+     
+        
+   </div>
+            
+             
+             
+            
+            
+    </div>
+   </div>
+    <!------------------------------ course cards ------------------------- -->
+    <!-- <div class="container mt-2 mb-4">
+    <hr>
+    <h2 style="font-weight: 800;">Our Products</h2>
+    <div class="row mt-5">
+    <div  id="course-card" class="card col-4  " style="border: none;">
+        <img style="height: 205px;"  class="card-img-top" src="https://cdn.prod.website-files.com/63ccf2f0ea97be12ead278ed/644a18b637053fa3709c5ba2_what-is-data-science.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h5 style="font-weight:700;" class="card-title">Data Science With Generative AI</h5>
+          <p class="card-text">Job Assistance / fast Learning / Gain Some real Knowledge .....</p>
+          <h6 style="font-weight: 700; margin: 30px 0">Limited Stock, Buy Now!</h6>
+          <a style=" background-color: transparent; border: 1px solid #f57008; color: #f57008;" href="#" class="btn btn-primary">Explore</a>
+          <a style=" background-color: #f57008; border: none;" href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div id="course-card" class="card col-4 " style=" border: none;">
+        <img style="height: 205px;"  class="card-img-top" src="https://datamites.com/blog/uploads/images/2023/11/image_750x_6561ad1f2e833.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h5 style="font-weight:700;" class="card-title">Pure Data Analytics Hinglish </h5>
+          <p class="card-text">Job Assistance / fast Learning / Gain Some real Knowledge ......</p>
+          <h6 style="font-weight: 700; margin: 30px 0">Limited Stock, Buy Now!</h6>
+          <a style=" background-color: transparent; border: 1px solid #f57008; color: #f57008;" href="#" class="btn btn-primary">Explore</a>
+          <a style=" background-color: #f57008; border: none;" href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div id="course-card"  class="card col-4 " style=" border: none;">
+        <img style="height: 205px;"  class="card-img-top" src="https://visualstudiomagazine.com/-/media/ECG/visualstudiomagazine/Images/introimages/BigData.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h5 style="font-weight:700;" class="card-title">Data in Hinglish for Begginers</h5>
+          <p class="card-text">Job Assistance / fast Learning / Gain Some real Knowledge .....</p>
+          <h6 style="font-weight: 700; margin: 30px 0">Limited Stock, Buy Now!</h6>
+          <a style=" background-color: transparent; border: 1px solid #f57008; color: #f57008;" href="#" class="btn btn-primary">Explore</a>
+          <a style=" background-color: #f57008; border: none;" href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      
+    </div>
+   
+
+    
+  
+  </div> -->
+
+
+   <!-------------------------------- bannner -->
+
+   <div class="container-fluid " style="background-color:#ebe7e7 ; ">
+    <div class="container ">
+      <div class="row">
+        <!-- left -->
+        <div id="hello1"  class="col-6 col-md-12 ">
+          <div>
+              
+            <h2 style="font-weight: 900 ; margin-top: 10px;">Our goal? </h2>
+                
+               <p >To snag those forgotten blooms from various spots – you know, like religious spots places where folks tie the knot, or any place that's got a festive vibe – and give them a new life as Earth-happy goodies. We're all about keeping it green slashing the trash, and playing our part in an economy that goes full circle by upgrading waste into treasure.
+              </p>
+                
+              <div>
+                <button id="butoooon" style="background-color: #f57008; color: #f9f6f6; margin-bottom: 10px; " class="btn "> Explore More</button>
+              </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+ 
+
+     <!------------------------------ SLidder infinite  --------------------- -->
+     <h2 style="text-align: center; font-weight: 900; margin-top: 20px;"></h2>
+     <div class="container scroll imgBox my-5" style="--time:25s">
+        <div>
+            <img src="https://www.svgrepo.com/show/474404/flowers.svg" alt="">
+            <img src="https://www.svgrepo.com/show/267574/flowers-flower.svg" alt="">
+            <img src="https://www.svgrepo.com/show/265855/flowers-bouquet.svg" alt="">
+            <img src="https://www.svgrepo.com/show/244558/flowers-bouquet.svg" alt="">
+            <img src="https://www.svgrepo.com/show/324000/flowers3.svg" alt="">
+            <img src="https://www.svgrepo.com/show/206111/flowers-flower.svg" alt="">
+            <img src="https://www.svgrepo.com/show/138620/flowers.svg" alt="">
+            <img src="https://www.svgrepo.com/show/154905/flowers.svg" alt="">
+            <img src="https://www.svgrepo.com/show/163732/flowers.svg" alt="">
+            <img src="https://www.svgrepo.com/show/81189/flowers.svg" alt="">
+            <img src="https://www.svgrepo.com/show/64131/flowers.svg" alt="">
+            <img src="https://www.svgrepo.com/show/311819/bouquet.svg" alt="">
+            <img src="https://www.svgrepo.com/show/11363/flowers.svg" alt="">
+        </div>
+        <div>
+          <img src="https://www.svgrepo.com/show/474404/flowers.svg" alt="">
+          <img src="https://www.svgrepo.com/show/267574/flowers-flower.svg" alt="">
+          <img src="https://www.svgrepo.com/show/265855/flowers-bouquet.svg" alt="">
+          <img src="https://www.svgrepo.com/show/244558/flowers-bouquet.svg" alt="">
+          <img src="https://www.svgrepo.com/show/324000/flowers3.svg" alt="">
+          <img src="https://www.svgrepo.com/show/206111/flowers-flower.svg" alt="">
+          <img src="https://www.svgrepo.com/show/138620/flowers.svg" alt="">
+          <img src="https://www.svgrepo.com/show/154905/flowers.svg" alt="">
+          <img src="https://www.svgrepo.com/show/163732/flowers.svg" alt="">
+          <img src="https://www.svgrepo.com/show/81189/flowers.svg" alt="">
+          <img src="https://www.svgrepo.com/show/64131/flowers.svg" alt="">
+          <img src="https://www.svgrepo.com/show/311819/bouquet.svg" alt="">
+          <img src="https://www.svgrepo.com/show/11363/flowers.svg" alt="">
+        </div>
+    </div>
+
+    <!-- success stories -->
+   <div class="container">
+     <h2 style="font-weight: 800;">Reviews</h2>
+
+     <div class="row mt-2" >
+        <div id="card1" class="col-3">
+            <div class=" mb-2">
+                <div class="card" style="background-color: #f9f6f6 ;">
+                    <div class="card-header" style="text-align: center; color:#f57008 ; font-weight: 700; ">⭐⭐⭐⭐⭐</div>
+                    <div  id="hello2" class="card-body "> <img style="width: 40px; height: 40px;" src="https://www.svgrepo.com/show/420339/boy-indian-kid.svg" alt="">
+                        <span id="name-succ" style="font-weight: 800; margin-left: 5%;"> Naman</span> </div>
+                        <p class="m-3" style="font-weight: 700;">I had a great experience with Phool se Fab. The service was quick, and the billing was transparent. I have no doubt that I will come back again. Highly recommend</p>
+                       
+
+                  </div>  
+             </div>
+        </div>
+        <div id="card1" class="col-3">
+            <div class=" mb-2">
+                <div class="card" style="background-color: #f9f6f6 ;">
+                    <div class="card-header" style="text-align: center; color: #f57008; font-weight: 700;">⭐⭐⭐⭐⭐</div>
+                    <div id="hello2"  class="card-body"> <img style="width: 40px; height: 40px;" src="https://www.svgrepo.com/show/490972/boy.svg" alt="">
+                        <span id="name-succ" style="font-weight: 800;  margin-left: 5%;"> Vikash</span></div>
+                        <p class="m-3" style="font-weight: 700;">I was completely impressed with their professionalism and customer service I spoke to was so helpful and friendly.  They were very responsive. </p>
+                       
+                  </div>  
+             </div>
+        </div>
+        <div id="card1" class="col-3">
+            <div class=" mb-2">
+                <div class="card" style="background-color: #f9f6f6 ;">
+                    <div class="card-header" style="text-align: center; color: #f57008; font-weight: 700;">⭐⭐⭐⭐</div>
+                    <div id="hello2"  class="card-body"> <img style="width: 40px; height: 40px;" src="https://www.svgrepo.com/show/190541/boy.svg" alt="">
+                        <span id="name-succ" style="font-weight: 800;  margin-left: 5%;"> Mohan</span> </div>
+                        <p class="m-3" style="font-weight: 700;">The customer service representative I spoke to was so helpful and friendly. They went above and beyond to answer my questions and resolve my issue</p>
+                       
+                  </div>  
+             </div>
+        </div>
+       
+        <div id="card1" class="col-3">
+            <div class=" mb-2">
+                <div class="card" style="background-color: #f9f6f6 ;">
+                    <div class="card-header" style="text-align: center; color: #f57008; font-weight: 700;">⭐⭐⭐⭐⭐</div>
+                    <div id="hello2" class="card-body"> <img style="width: 40px; height: 40px;" src="https://www.svgrepo.com/show/401857/girl-medium-skin-tone.svg" alt=""> 
+                         <span id="name-succ"  style="font-weight: 800; margin-left: 5%;">Sonam</span></div>
+                    <p class="m-3" style="font-weight: 700;">I had a great experience with the customer service team at this company. They were very responsive, and they were able to resolve my issue quickly</p>
+                   
+
+                  </div>  
+             </div>
+        </div>
+     </div>
+   </div>
+
+   <!---------------------------------- faq ----------------------->
+
+   
+   <div class="container mb-3 mt-2" >
+    <h1 style="font-weight: 900; ">Frequently Asked Questions</h1>
+   <div id="accordion">
+
+    <div class="card " >
+      <div class="card-header " style="padding-left: 0;">
+        <a style="font-weight: 800;" class="btn text-align-start" data-bs-toggle="collapse" href="#collapseOne">
+          How To Contact Our team ?
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse " data-bs-parent="#accordion">
+        <div class="card-body">
+         
+To contact our team, please use one of the following methods:
+<br>
+<br>
+●  Email <br>
+Reach us at: phoolsefab@gmail.com <br>
+We aim to respond within 24–48 hours. <br>
+●  Phone <br>
+Call us at: 98745765209 <br>
+Available: 8am - 8pm <br>
+●  Social Media <br>
+Message us on: <br>
+<a href="">Instagram</a>
+<a href="">linkedin</a>
+
+          </pre>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="card ">
+      <div class="card-header " style="padding-left: 0;">
+        <a style="font-weight: 800;" class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+          How much it cost ?
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+           
+For accurate information about pricing, please contact our Customer Care team via phone or email. Our team is available during [*am - 8pm] to assist you and provide all the details you need.
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header " style="padding-left: 0;">
+        <a  style="font-weight: 800;" class="collapsed btn " data-bs-toggle="collapse" href="#collapseThree">
+          How to become a member of phool se fab ?
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+            
+To become a part of Phool Se Fab, join our vibrant community by participating in our campaigns and initiatives. Engage with us on the ground through volunteering opportunities or by supporting our causes. Stay updated on upcoming events, workshops, and projects by following us on social media or visiting our website. Together, we can create meaningful change—join us today!
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" style="padding-left: 0;"  >
+          <a  style="font-weight: 800;" class="collapsed btn " data-bs-toggle="collapse" href="#collapsefor">
+           Is this service is genuine ?
+          </a>
+        </div>
+        <div id="collapsefor" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            
+
+Yes, our service is 100% genuine. We are committed to transparency, quality, and delivering the best to our customers. You can verify our authenticity through:
+<br> <br>
+●  Customer Reviews: Check testimonials from our satisfied clients. <br>
+●  Contact Options: Reach out to our support team anytime for queries. <br> <br>
+
+If you have specific concerns or need more reassurance, feel free to get in touch with us directly. We’re here to help!
+            
+          </div>
+        </div>
+      </div>
+
+      
+  
+  </div>
+</div>
+
+<!--------------------------------------------- footer ----------------------------->
+
+
+<div class="container-fluid my-2">
+
+ 
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #6351ce"
+             >
+   
+    </section>
+    
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+   
+        <div class="row mt-3">
+        
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold">Phool se Fab</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Here at Phool se fab, we're tackling the leftover flower problem head-on. 
+            </p>
+            <p>📞  98745765209</p>
+            <p>💬 phoolsefab@gmail.com</p>
+            <img style="height: 20px; width: 20px; margin-right: 20px;" src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="">
+            <img style="height: 20px; width: 20px ; margin-right: 20px;" src="https://www.svgrepo.com/show/475689/twitter-color.svg" alt="">
+            <img style="height: 20px; width: 20px;" src="https://www.svgrepo.com/show/349527/telegram.svg" alt="">
+            <br>
+            <img style="height: 80px; width: 80px; margin-top: 20px;" src="https://www.svgrepo.com/show/303573/iso-2-1-logo.svg" alt="">
+          </div>
+          
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white text-decoration-none">Assistance</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">Contact Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">About Us</a>
+            </p>
+           
+          </div>
+          
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold">COMPANY</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            
+            <p>
+              <a href="#!" class="text-white text-decoration-none">Become a Memeber</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">Help</a>
+            </p>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+  </footer>
+  
+
+</div>
+  </body>
+</html>
